@@ -11,6 +11,7 @@ def start(message):
     bot.send_message(message.from_user.id, emojing("Привет! :waving_hand: "))
 
 
+
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
     if message.text.lower() in ('привет', 'привет!', emojing("Привет! :waving_hand: ")):
