@@ -1,7 +1,7 @@
 import telebot
 import emoji
 from telebot import types
-print('test4')
+print('test5')
 bot = telebot.TeleBot('6618497519:AAEHGb3mQGpvfj8EBLBIUy62_EFU49i2bME')
 def emojing(line):
     return str(emoji.emojize(line))
