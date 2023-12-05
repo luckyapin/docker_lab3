@@ -2,6 +2,7 @@ import telebot
 import emoji
 from telebot import types
 import pygad
+import camelcase
 
 bot = telebot.TeleBot('6618497519:AAEHGb3mQGpvfj8EBLBIUy62_EFU49i2bME')
 def emojing(line):
@@ -15,6 +16,9 @@ def start(message):
 def get_text_messages(message):
     if message.text.lower() in ('привет', 'привет!', emojing("Привет! :waving_hand: ")):
         bot.send_message(message.from_user.id, emojing("Привет! :waving_hand: ")) 
-
+        
+c = camelcase.CamelCase()
+txt = "hello world"
+print(c.hump(txt))
 bot.polling(none_stop=True, interval=0)
 #какой то код
