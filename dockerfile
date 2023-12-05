@@ -5,7 +5,9 @@ WORKDIR /app
 #Хорошая практика использовать 1 RUN
 RUN pip install \
     telebot\
-    emoji
+    emoji\
+    pygad\
+    camelcase
 
 COPY tgbot.py .
 
