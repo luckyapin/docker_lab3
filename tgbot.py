@@ -1,6 +1,7 @@
 import telebot
 import emoji
 from telebot import types
+import pygad
 
 bot = telebot.TeleBot('6618497519:AAEHGb3mQGpvfj8EBLBIUy62_EFU49i2bME')
 def emojing(line):
